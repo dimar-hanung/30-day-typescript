@@ -1,5 +1,6 @@
 # 30-DAY-TYPESCRIPT
 ## Deskripsi
+Hanya Catatan Pribadi.  
 Belajar TypeScript Selama 30 hari berturut-turut, dan lihat bisa menghasilkan apa dari 30 hari itu.
 ## Daftar Isi
 - [x] Day 01
