@@ -8,8 +8,6 @@ Belajar TypeScript Selama 30 hari berturut-turut, dan lihat bisa menghasilkan ap
   - [x] Mengapa TypeScript
   - [x] Install
   - [x] Hello World
-- [ ] Day 02
-  - [ ] Tipe Data
-  - [ ] Types
-  - [ ] Interface
+- [x] Day 02
+  - [x] Types
 
