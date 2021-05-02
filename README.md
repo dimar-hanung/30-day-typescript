@@ -9,5 +9,9 @@ Belajar TypeScript Selama 30 hari berturut-turut, dan lihat bisa menghasilkan ap
   - [x] Install
   - [x] Hello World
 - [x] Day 02
-  - [x] Types
+  - [x] Data Types
+- [x] Day 03
+  - [x] Variable
+- [x] Day 04
+  - [ ] Types & Variable
 
