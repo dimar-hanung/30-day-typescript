@@ -13,5 +13,5 @@ Belajar TypeScript Selama 30 hari berturut-turut, dan lihat bisa menghasilkan ap
 - [x] Day 03
   - [x] Variable
 - [x] Day 04
-  - [ ] Types & Variable
+  - [x] Types & Inteface
 
