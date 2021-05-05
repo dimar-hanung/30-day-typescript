@@ -1,18 +1,32 @@
-class BaseEntity {
-  readonly id: number;
-  readonly created: string;
-  constructor() {
-    this.id = Math.random();
-    this.created = new Date().toLocaleDateString();
+export function logClass(target: Function) {
+  // save a reference to the original constructor
+  const original = target;
+
+  // a utility function to generate instances of a class
+  function construct(constructor, args) {
+    const c: any = function () {
+      return constructor.apply(this, args);
+    };
+    c.prototype = constructor.prototype;
+    return new c();
   }
+
+  // the new constructor behaviour
+  const f: any = function (...args) {
+    console.log(`New: ${original["name"]} is created`);
+    return construct(original, args);
+  };
+
+  // copy prototype so intanceof operator still works
+  f.prototype = original.prototype;
+
+  // return new constructor (will override original)
+  return f;
 }
 
-class Course extends BaseEntity {
-  constructor(public name: string) {
-    super();
-  }
-}
+@logClass
+class Employee {}
 
-let englishCourse = new Course("English");
-console.log("id: " + englishCourse.id);
-console.log("created: " + englishCourse.created);
+let emp = new Employee();
+console.log("emp instanceof Employee");
+console.log(emp instanceof Employee);
